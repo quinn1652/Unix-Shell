@@ -1,7 +1,7 @@
 # Unix-Shell
 Unix shell written in C. Includes argument processing, various builtins, and many other features
 
-Argument processing features:
+Argument processing features:\n
 -handles multiple arguments
 -handles double quotes around arguments
 -replaces ${NAME} with value of environment variable NAME
