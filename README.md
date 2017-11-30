@@ -28,6 +28,15 @@ Builtin Commands:
   
 -envunset var
   -removes environment variable var from environment
+  
+-sstat file
+  -lists details of specified file
+  
+-shift/unshift val
+  -shifts or unshifts arguments by specified val
+  
+-read str
+   -reads value str into env var
 
 Also includes:
 
