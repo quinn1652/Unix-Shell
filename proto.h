@@ -1,20 +1,18 @@
-/*	$Id: proto.h,v 1.6 2016/10/18 21:02:33 murphyq Exp $	*/
+/*	$Id: proto.h,v 1.12 2016/11/30 17:42:47 murphyq Exp $	*/
 
 /*
 Quinn Murphy
-October 18, 2016
+November 11, 2016
 CSCI 352 MTWFF 9am
-Assignment 3
+Assignment 4
 */
-
-#include <stdbool.h>
 
 
 #ifndef HEADER_H
 #define HEADER_H
 
 char** arg_parse(char*,int*);
-bool builtin(char**, int*);
+int builtin(char**, int*,int,int,int);
 int expand(char *orig, char *new, int newsize);
-
+int processline(char* line,int in,int out,int nowait);
 #endif
