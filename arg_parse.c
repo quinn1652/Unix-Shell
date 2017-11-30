@@ -1,10 +1,10 @@
-/*	$Id: arg_parse.c,v 1.5 2016/10/18 21:02:33 murphyq Exp $	*/
+/*	$Id: arg_parse.c,v 1.7 2016/11/02 04:29:14 murphyq Exp $	*/
 
 /*
 Quinn Murphy
-October 18,2016
+November 11,2016
 CSCI 352
-Assignment 3
+Assignment 4
 */
 
 
@@ -24,7 +24,7 @@ char** arg_parse(char *line, int* argnum){
     char** ret;
     bool openq=false;//true if odd number of quotes
     while(*(line+index) != 0){//counting arguments
-        if(*(line+index) == 34){
+        if(*(line+index) == '\"'){
             if(openq==false){
                 openq=true;
             }
