@@ -11,6 +11,8 @@ Argument processing features:
 
 -replaces $$ with pid of shell
 
+-piping with "|" operator
+
 
 Builtin Commands:
 
